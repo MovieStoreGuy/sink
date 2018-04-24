@@ -22,7 +22,6 @@ func EnsureResolveOf(addresses ...string) error {
 				}
 			} else {
 				color.Green("Is able to resolve: %v", address)
-				color.Green("Slice length:%v", len(addresses))
 				if len(addresses) == 1 {
 					addresses = append([]string{})
 				} else {
